@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Title of page -->
+    <title>Mailer-The platform for anonymous mails</title>
+
+    <!-- More information about our page -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Short description about our page -->
+    <meta
+      name="description"
+      content="The Mailer helps to send anonymous mail"
+    />
+
+    <!-- Author of our page -->
+    <meta name="author" content="Shashwat Raj" />
+
+    <!-- Icon of our page -->
+    <link rel="shortcut icon" href="favicon8.ico" type="image/x-icon" />
+
+    <!-- External font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- External CSS with links -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.10.2/css/all.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header of our page -->
+    <header class="text-gray-700 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+        >
+          <img src="logo.png" alt="Mailer Logo" class="logoimg" />
+          <span class="ml-3 text-xl colwh"
+            >Mailer - Service by &nbsp<a
+              href="https://youtube.com/@circuittech"
+              target="_blank"
+              class="logoh colwh"
+              >CircuitTech</a
+            ></span
+          >
+        </a>
+        <nav
+          class="md:ml-auto flex flex-wrap items-center text-base justify-center"
+        ></nav>
+      </div>
+    </header>
+    <hr />
+
+    <!-- Mail Form -->
+    <form enctype="multipart/form-data" action="mailer.php" method="post">
+      <section class="text-gray-700 body-font relative">
+        <div class="container px-5 py-24 mx-auto hedr">
+          <div class="flex flex-col text-center w-full mb-12">
+            <h1
+              class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+            >
+              <a class="mailh colwh" href="#">Mailer</a>
+            </h1>
+            <p class="lg:w-2/3 mx-auto leading-relaxed text-base colwh">
+              Fill the required details to send a mail.
+            </p>
+          </div>
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-1/2">
+                <input
+                  class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 borfor formbgcol"
+                  placeholder="Sender's Name"
+                  type="text"
+                  name="s_name"
+                  required
+                />
+              </div>
+              <div class="p-2 w-1/2">
+                <input
+                  class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 borfor formbgcol"
+                  placeholder="Sender's Email"
+                  type="email"
+                  name="s_email"
+                  required
+                />
+              </div>
+              <div class="p-2 w-1/2">
+                <input
+                  class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 borfor formbgcol"
+                  placeholder="Subject"
+                  type="text"
+                  name="subject"
+                  required
+                />
+              </div>
+              <div class="p-2 w-1/2">
+                <input
+                  class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 borfor formbgcol"
+                  placeholder="Reciever's Email"
+                  type="email"
+                  name="r_email"
+                  required
+                />
+              </div>
+              <div class="p-2 w-1/2">
+                <input
+                  class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none focus:border-indigo-500 text-base px-4 py-2 borfor formbgcol"
+                  type="file"
+                  name="attachment"
+                  style="width: 320px"
+                />
+              </div>
+              <div class="p-2 w-full">
+                <textarea
+                  class="w-full bg-gray-100 rounded border border-gray-400 focus:outline-none h-48 focus:border-indigo-500 text-base px-4 py-2 resize-none block borfor formbgcol"
+                  placeholder="Message"
+                  name="message"
+                  required
+                ></textarea>
+              </div>
+              <div class="p-2 w-full">
+                <button
+                  class="flex mx-auto text-white bg-red-500 border-0 py-2 px-8 focus:outline-none rounded text-lg subrd hovrd"
+                  type="submit"
+                  name="button"
+                >
+                  Mail
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+
+    <div>
+      <div class="flex flex-col text-center w-full mb-12">
+        <h1
+          class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900"
+        >
+          <a class="temph colwh" href="https://tempmail.email/" target="_blank"
+            >Temp-Mail</a
+          >
+        </h1>
+        <p class="lg:w-2/3 mx-auto leading-relaxed text-base colwh">
+          Use this for login anywhere without spams in your inbox.
+        </p>
+      </div>
+      <div style="padding-bottom: 4rem">
+        <center>
+          <iframe
+            src="https://tempmail.email/"
+            name="tempmail"
+            frameborder="0"
+            height="650px"
+            width="60%"
+          ></iframe>
+        </center>
+      </div>
+    </div>
+
+    <!-- Footer our page -->
+    <div class="footer-basic">
+      <footer>
+        <div class="social">
+          <a href="https://www.instagram.com/sraj__39/" target="_blank"
+            ><i class="icon ion-social-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/circuittech0/" target="_blank"
+            ><i class="icon ion-social-facebook"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/shashwat-raj-98976923b/"
+            target="_blank"
+            ><i class="icon ion-social-linkedin"></i
+          ></a>
+          <a href="https://github.com/Shashwatraj3951" target="_blank"
+            ><i class="icon ion-social-github"></i
+          ></a>
+          <a href="https://youtube.com/@circuittech" target="_blank"
+            ><i class="icon ion-social-youtube"></i
+          ></a>
+        </div>
+        <ul style="padding-top: 10px">
+          <li class="list-inline-item"><a href="#">Home</a></li>
+          <li class="list-inline-item">
+            <a href="Terms And Conditions.html" target="_blank">Terms</a>
+          </li>
+          <li class="list-inline-item">
+            <a href="Privacy Policy.html" target="_blank">Privacy Policy</a>
+          </li>
+        </ul>
+        <p class="copyright">Mailer © 2022 All Rights Reserved</p>
+      </footer>
+    </div>
+  </body>
+</html>
